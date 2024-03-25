@@ -180,7 +180,7 @@ export class SMTPService {
 
   async generatePdfBuffer(htmlContent: string): Promise<Buffer> {
     const browser = await puppeteer.launch({
-      executablePath: '/home/anand/.cache/puppeteer/chrome/linux-122.0.6261.69/chrome-linux64/chrome',
+      executablePath: '/usr/bin/google-chrome',
     });
     const page = await browser.newPage();
 
